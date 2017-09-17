@@ -128,7 +128,8 @@ body{
 }
 
 #drawer-icon{
-	margin-top: 8px;
+	margin-top: 1px;
+	margin-left: 5px;
 }
 
 #closeDrawer{
@@ -143,6 +144,8 @@ body{
 .nav-icon:hover{
 	border-radius: 50%;
 	background: #80CBC4;
+	padding: 16px 0px;
+	vertical-align: middle;
 }
 
 #name1{
@@ -161,6 +164,22 @@ body{
 	position: absolute;
 	right: 80px;
 	bottom: 150px !important;
+}
+
+#name4{
+	position: relative;
+	top: -6px;
+	left: 38%;
+	max-width: 145px;
+	text-align: center;
+}
+
+#name5{
+	position: relative;
+	top: -6px;
+	left: 45%;
+	max-width: 145px;
+	text-align: center;
 }
 
 .toast-n {

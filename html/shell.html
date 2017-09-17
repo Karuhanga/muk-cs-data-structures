@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="scripts/core.js"></script>
 		<title></title>
 	</head>
-<body class="black-text text-black-darken-5">
+<body class="black-text text-black-darken-5 teal lighten-5">
 	<nav id="navi" class="teal lighten-1 card navbar navbar-default">
 		<span id="drawer-icon" class="pull-left"><img src="img/menu.png" alt="Menu"></span>
 		<div class="pull-right">
@@ -19,12 +19,12 @@
 			<input id="search-box" type="text" length="10"> -->
 		</div>
 		<div class="teal lighten-1 container container-no-padding text-center">
-			<ul id="action-tabs" class="teal lighten-1 tabs">
-			<li class="tab nav-icon"><img src="img/play.png"></li>
-			<li class="tab nav-icon"><img src="img/stop.png"></li>
-		</ul>
+			<span id="play" class="nav-icon"><img src="img/play.png"></span>
+			<span id="stop" class="nav-icon"><img src="img/stop.png"></span>
 		</div>
 	</nav>
+	<span id="name4" class="names toast-n teal lighten-1">Play/Proceed</span>
+	<span id="name5" class="names toast-n teal lighten-1">Stop/Pause</span>
 	<div id="navDrawer" class="teal lighten-4 sidenav">
 		<div class="teal lighten-2" id="bio">
 			<a id="closeDrawer" href="javascript:void(0)" class="closebtn">&times;</a>
@@ -35,6 +35,16 @@
 		<ul id="ds" class="expandable-list">
 			<li>Stacks</li>
 			<li>Queues</li>
+			<li>Arrays</li>
+			<li>Lists</li>
+		</ul>
+		<a href="#" id="label-ads" class="">Advanced Data Structures</a>
+		<ul id="ads" class="expandable-list">
+			<li>Linked Lists</li>
+			<li>Priority Queues</li>
+			<li>Heaps</li>
+			<li>Trees</li>
+			<li>Graphs</li>
 		</ul>
 		<a href="#" id="label-search">Search</a>
 		<ul id="search" class="expandable-list">
@@ -54,11 +64,11 @@
 
 	<div id="content" class="container teal lighten-5"></div>
 
-	<span id="fab1" class="faby btn-floating btn-large"><img src="img/cloud.png" alt="Data"></span>
+	<span id="fab1" class="faby btn-floating btn-large"><img src="img/timeline.png" alt="Data"></span>
 	<span id="name1" class="names toast-n teal lighten-1">Data</span>
-	<span id="fab2" class="faby btn-floating btn-large"><img src="img/play_round.png" alt="Simulation"></span>
+	<span id="fab2" class="faby btn-floating btn-large"><img src="img/movie.png" alt="Simulation"></span>
 	<span id="name2" class="names toast-n teal lighten-1">Simulation</span>
-	<span id="fab3" class="faby btn-floating btn-large"><img src="img/edit.png" alt="Summary"></span>
+	<span id="fab3" class="faby btn-floating btn-large"><img src="img/book.png" alt="Summary"></span>
 	<span id="name3" class="names toast-n teal lighten-1">Summary</span>
 	
 </body>

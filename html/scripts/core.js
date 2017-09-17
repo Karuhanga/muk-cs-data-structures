@@ -19,6 +19,10 @@ function onLoad() {
 		toggleMenu($('#ds'));
 	})
 
+	$('#label-ads').bind('click', function (){
+		toggleMenu($('#ads'));
+	})
+
 	$('#label-search').bind('click', function(){
 		toggleMenu($('#search'));
 	})
@@ -49,6 +53,22 @@ function onLoad() {
 
 	$('#fab3').bind('mouseenter', function(){
 		$('#name3').show(TIME_MEDIUM);
+	});
+
+	$('#play').bind('mouseleave', function(){
+		$('#name4').hide(TIME_MEDIUM);
+	});
+
+	$('#play').bind('mouseenter', function(){
+		$('#name4').show(TIME_LONG);
+	});
+
+	$('#stop').bind('mouseleave', function(){
+		$('#name5').hide(TIME_MEDIUM);
+	});
+
+	$('#stop').bind('mouseenter', function(){
+		$('#name5').show(TIME_LONG);
 	});
 }
 
