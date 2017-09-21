@@ -2,9 +2,6 @@ import os
 
 class Config:
     SECRET_KEY = "gcysdh7ew63q98ytbcxybgv_hygfd653267"
-    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-
     @staticmethod
     def init_app(app):
         pass
@@ -17,7 +14,6 @@ class DevelopmentConfig(Config):
         which may or may not require a custom URI
         its also imortant to look at the sqlaclchemy documents and get a better understanding
     """
-    SQLALCHEMY_DATABASE_URI = "mysql://root:7910@localhost/DSA"
 
 class TestingConfig(Config):
     TESTING = True

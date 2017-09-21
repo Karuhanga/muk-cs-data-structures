@@ -6,7 +6,6 @@ from flask_migrate import Migrate, MigrateCommand
 from config import config
 
 dev = config['development']
-devi = os.environ.get('SECRET_KEY')
 
 app = create_app(dev)
 manager = Manager(app)
