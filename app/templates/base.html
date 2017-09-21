@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="styles/core.css">
-		<link rel="stylesheet" type="text/css" href="styles/materialize.css">
-		<script type="text/javascript" src="scripts/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-		<script type="text/javascript" src="scripts/materialize.min.js"></script>
-		<script type="text/javascript" src="scripts/core.js"></script>
-		<title></title>
+		<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'styles/bootstrap.min.css' )}}" >
+		<link rel="stylesheet" type="text/css" href=" {{ url_for('static' , filename = 'styles/core.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename = 'styles/materialize.css') }}">
+		<title>Dats Structures</title>
 	</head>
 <body class="black-text text-black-darken-5 teal lighten-5">
 	<nav id="navi" class="teal lighten-1 card navbar navbar-default">
-		<span id="drawer-icon" class="pull-left"><img src="img/menu.png" alt="Menu"></span>
+		<span id="drawer-icon" class="pull-left"><img src=" {{ url_for('static' , filename = 'img/menu.png') }}" alt="Menu"></span>
 		<div class="pull-right">
-			<img src="img/search.png" id="search-icon" class="nav-icon" alt="Search">
+			<img src=" {{ url_for( 'static' , filename = 'img/search.png') }}" id="search-icon" class="nav-icon" alt="Search">
 			<!-- <label for="search-box">Search</label>
 			<input id="search-box" type="text" length="10"> -->
 		</div>
 		<div class="teal lighten-1 container container-no-padding text-center">
-			<span id="play" class="nav-icon"><img src="img/play.png"></span>
-			<span id="stop" class="nav-icon"><img src="img/stop.png"></span>
+			<span id="play" class="nav-icon"><img src=" {{ url_for('static' , filename = 'img/play.png') }}"></span>
+			<span id="stop" class="nav-icon"><img src=" {{ url_for('static' , filename = 'img/stop.png') }}"></span>
 		</div>
 	</nav>
 	<span id="name4" class="names toast-n teal lighten-1">Play/Proceed</span>
@@ -64,12 +60,19 @@
 
 	<div id="content" class="container teal lighten-5"></div>
 
-	<span id="fab1" class="faby btn-floating btn-large"><img src="img/timeline.png" alt="Data"></span>
+	<span id="fab1" class="faby btn-floating btn-large"><img src=" {{ url_for('static', filename = 'img/timeline.png') }}" alt="Data"></span>
 	<span id="name1" class="names toast-n teal lighten-1">Data</span>
-	<span id="fab2" class="faby btn-floating btn-large"><img src="img/movie.png" alt="Simulation"></span>
+	<span id="fab2" class="faby btn-floating btn-large"><img src=" {{ url_for('static' , filename = 'img/movie.png') }}" alt="Simulation"></span>
 	<span id="name2" class="names toast-n teal lighten-1">Simulation</span>
-	<span id="fab3" class="faby btn-floating btn-large"><img src="img/book.png" alt="Summary"></span>
+	<span id="fab3" class="faby btn-floating btn-large"><img src=" {{ url_for('static' , filename = 'img/book.png') }}" alt="Summary"></span>
 	<span id="name3" class="names toast-n teal lighten-1">Summary</span>
+
+
+		<script type="text/javascript" src=" {{ url_for('static' , filename = 'scripts/jquery.min.js') }}"></script>
+		<script type="text/javascript" src=" {{ url_for('static' , filename = 'scripts/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src=" {{ url_for('static' , filename = 'scripts/materialize.min.js') }}"></script>
+		<script type="text/javascript" src=" {{ url_for('static' , filename = 'scripts/core.js') }}"></script>
+
 	
 </body>
 </html>
