@@ -55,21 +55,15 @@ function onLoad() {
 		$('#name3').show(TIME_MEDIUM);
 	});
 
-	$('#play').bind('mouseleave', function(){
-		$('#name4').hide(TIME_MEDIUM);
-	});
+	$('.menu-data-item').bind('click', function (e) {
+		loadDataPage($('#'.concat(e.currentTarget.id)));
+	})
 
-	$('#play').bind('mouseenter', function(){
-		$('#name4').show(TIME_LONG);
-	});
+	$('#the-project').bind('click', function(){
+		loadProjectPage();
+	})
 
-	$('#stop').bind('mouseleave', function(){
-		$('#name5').hide(TIME_MEDIUM);
-	});
-
-	$('#stop').bind('mouseenter', function(){
-		$('#name5').show(TIME_LONG);
-	});
+	loadProjectPage();
 }
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
@@ -98,3 +92,57 @@ function toggleMenu(menu) {
 		menu.hide(TIME_MEDIUM);
 	}
 }
+
+function hideFabs() {
+	$('.faby').hide();
+}
+
+function showFabs(){
+	$('.faby').show();
+}
+
+function hideControls() {
+	$('.controls').hide();
+}
+
+function showControls() {
+	$('.controls').show();
+}
+
+function loadProjectPage() {
+	hideFabs();
+	hideControls();
+	closeDrawer();
+	$('#content').load('the_project');
+	document.location.hash= "about-the-project";
+	$('title').text("The Project | Data Structures and Algorithms");
+}
+
+function loadDataPage(element) {
+	showFabs();
+	showControls();
+	closeDrawer();
+	var PATH= element.parent().attr('id').concat('/', element.attr('id'));
+	$('#content').load(PATH);
+	document.location.hash= element.text();
+	$('title').text(element.text().concat(" | Data Structures and Algorithms"));
+}
+
+
+/*
+	**Looked a lottle ugly
+	$('#play').bind('mouseleave', function(){
+		$('#name4').hide(TIME_MEDIUM);
+	});
+
+	$('#play').bind('mouseenter', function(){
+		$('#name4').show(TIME_LONG);
+	});
+
+	$('#stop').bind('mouseleave', function(){
+		$('#name5').hide(TIME_MEDIUM);
+	});
+
+	$('#stop').bind('mouseenter', function(){
+		$('#name5').show(TIME_LONG);
+	});*/
