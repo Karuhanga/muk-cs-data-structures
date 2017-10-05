@@ -14,6 +14,7 @@ class DevelopmentConfig(Config):
         which may or may not require a custom URI
         its also imortant to look at the sqlaclchemy documents and get a better understanding
     """
+    SQLALCHEMY_DATABASE_URI = "mysql://host:7910@localhost/dsa"
 
 class TestingConfig(Config):
     TESTING = True
