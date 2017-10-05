@@ -15,8 +15,16 @@ class stacks{
     top_item(){
         if (this.array.length == 0)
         throw new RangeError('Stack is empty );');
-        top = this.array.length - 1;
+        var top = this.array.length - 1;
         return this.array[top];
         
     }
+    isEmpty(){
+       var status =  (this.array.length == 0)? true : false;
+       return status;
+    }
+    size(){
+        return this.array.length;
+    }
 }
+
