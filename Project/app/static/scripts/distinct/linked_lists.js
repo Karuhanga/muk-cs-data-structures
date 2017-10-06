@@ -103,10 +103,6 @@ class LinkedList{
 	}
 }
 
-$(document).ready(function (){
-	privateInit();
-})
-
 function showSummary() {
 	$('#container-visualisation-linked_lists').hide();
 	$('#container-data-linked_lists').hide();
@@ -118,6 +114,16 @@ function showVisualisation() {
 	$('.container-summary-linked_lists').hide();
 	$('#container-visualisation-linked_lists').show();
 }
+
+function showData() {
+	$('#container-visualisation-linked_lists').hide();
+	$('.container-summary-linked_lists').hide();
+	$('#container-data-linked_lists').show();
+}
+
+$(document).ready(function (){
+	privateInit();
+})
 
 function privateInit() {
 	var LINKED_LIST= null;
