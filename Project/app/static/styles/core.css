@@ -74,10 +74,6 @@ body{
     margin-left: 50px;
 }
 
-#names, #references{
-	list-style-type: none;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav a {font-size: 18px;}
@@ -100,6 +96,10 @@ body{
 		height: 100%;
 		margin-bottom: 0px !important;
 	}
+
+	.controls-space{
+		border-left: 1px solid black;
+}
 }
 
 #bio{
@@ -276,4 +276,16 @@ body{
 /*Very Exaggerated*/
 .card-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.controls-space li{
+	padding-bottom: 20px;
+}
+
+.controls-space{
+	margin-top: 65px;
+}
+
+.btn{
+	text-transform: lowercase !important;
 }

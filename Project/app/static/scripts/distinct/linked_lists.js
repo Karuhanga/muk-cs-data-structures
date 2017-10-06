@@ -12,6 +12,10 @@ class LinkedList{
 		this.head= new Node(null, null);
 	}
 
+	getSize(){
+		return this.size;
+	}
+
 	isEmpty(){
 		return this.size<1;
 	}
@@ -97,4 +101,60 @@ class LinkedList{
 		this.head= this.head.next;
 		return result;
 	}
+}
+
+$(document).ready(function (){
+	privateInit();
+})
+
+function showSummary() {
+	$('#container-visualisation-linked_lists').hide();
+	$('#container-data-linked_lists').hide();
+	$('.container-summary-linked_lists').show();
+}
+
+function showVisualisation() {
+	$('#container-data-linked_lists').hide();
+	$('.container-summary-linked_lists').hide();
+	$('#container-visualisation-linked_lists').show();
+}
+
+function privateInit() {
+	var LINKED_LIST= null;
+
+	$('#linkedList').bind('click', function(){
+		LINKED_LIST= new LinkedList();
+	});
+
+	$('#size').bind('click', function(){
+		LINKED_LIST.getSize();
+	});
+
+	$('#isEmpty').bind('click', function(){
+		LINKED_LIST.isEmpty();
+	});
+
+	$('#first').bind('click', function(){
+		LINKED_LIST.first();
+	});
+
+	$('#addFirst').bind('click', function(){
+		//TODO check for content in input box
+		LINKED_LIST.addFirst();
+	});
+
+	$('#last').bind('click', function(){
+		LINKED_LIST.last();
+	});
+
+	$('#addLast').bind('click', function(){
+		//TODO check for content in input box
+		LINKED_LIST.addLast();
+	});
+
+	$('#removeFirst').bind('click', function(){
+		LINKED_LIST.removeFirst();
+	});
+
+	showSummary();
 }

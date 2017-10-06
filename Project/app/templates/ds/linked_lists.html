@@ -1,23 +1,25 @@
-<script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/queues.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/linked_lists.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
-<div id="container-visualisation-queues" class="row height-100">
+<div id="container-visualisation-linked_lists" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-6 col-md-6">
 		Visualisation
 	</div>
 	<div class= "text-center controls-space col-sm-6 col-md-6">
 		<ul class="list-unstyled">
-			<li><button class="btn waves-effect waves-teal">Queue()</button></li>
-			<li><button class="btn waves-effect waves-teal">enqueue()</button></li>
-			<li><button class="btn waves-effect waves-teal">dequeue()</button></li>
-			<li><button class="btn waves-effect waves-teal">size()</button></li>
-			<li><button class="btn waves-effect waves-teal">first()</button></li>
-			<li><button class="btn waves-effect waves-teal">isEmpty()</button></li>
+			<li><button id="linkedList" class="btn waves-effect waves-teal">LinkedList()</button></li>
+			<li><button id="size" class="btn waves-effect waves-teal">size()</button></li>
+			<li><button id="isEmpty" class="btn waves-effect waves-teal">isEmpty()</button></li>
+			<li><button id="first" class="btn waves-effect waves-teal">first()</button></li>
+			<li><button id="last" class="btn waves-effect waves-teal">last()</button></li>
+			<li><button id="addFirst" class="btn waves-effect waves-teal">addFirst()</button></li>
+			<li><button id="addLast" class="btn waves-effect waves-teal">addLast()</button></li>
+			<li><button id="removeFirst" class="btn waves-effect waves-teal">removeFirst()</button></li>
 		</ul>
 	</div>
 </div>
 
 <!--This jumps straight into a div(#content) with the class .container -->
-<div class="my-row container-summary-queues row">
+<div class="my-row container-summary-linked_lists row">
 	<div id="intro" class="height-100 col-md-6 col-sm-6">
 		<div class="height-80 card card-1 teal lighten-4">
 			<div class="card-content">
@@ -44,7 +46,7 @@
 	</div>
 </div>
 
-<div class="container-summary-queues my-row row">
+<div class="container-summary-linked_lists my-row row">
 	<div id="about" class="height-100 col-md-6 col-sm-6">
 		<div class="height-80 card card-1 teal lighten-4">
 			<div class="card-content">

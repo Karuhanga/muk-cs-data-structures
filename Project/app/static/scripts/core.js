@@ -55,6 +55,17 @@ function onLoad() {
 		$('#name3').show(TIME_MEDIUM);
 	});
 
+	$('#fab1').bind('click', function(){
+		showData();
+	});
+
+	$('#fab2').bind('click', function(){
+		showVisualisation();
+	});
+	$('#fab3').bind('click', function(){
+		showSummary();
+	});
+
 	$('.menu-data-item').bind('click', function (e) {
 		loadDataPage($('#'.concat(e.currentTarget.id)));
 	})
@@ -113,16 +124,19 @@ function loadProjectPage() {
 	hideFabs();
 	hideControls();
 	closeDrawer();
-	$('#content').load('the_project');
+	$('#content').load('the_project.html');
 	document.location.hash= "about-the-project";
 	$('title').text("The Project | Data Structures and Algorithms");
 }
 
 function loadDataPage(element) {
 	showFabs();
-	showControls();
+	hideControls();
 	closeDrawer();
-	var PATH= element.parent().attr('id').concat('/', element.attr('id'));
+	if (element.parent().attr('id')!='ds') {
+		showControls();
+	}
+	var PATH= element.parent().attr('id').concat('/', element.attr('id'), '.html');
 	$('#content').load(PATH);
 	document.location.hash= element.text();
 	$('title').text(element.text().concat(" | Data Structures and Algorithms"));
