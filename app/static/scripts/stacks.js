@@ -13,6 +13,7 @@ class stack{
     }
     
     top_item(){
+        
         if (this.array.length == 0)
         throw new RangeError('Stack is empty );');
         var top = this.array.length - 1;
