@@ -102,6 +102,13 @@ body{
 }
 }
 
+#title{
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
 #bio{
 	background: blue;
 	height: 150px;
@@ -283,7 +290,11 @@ body{
 }
 
 .controls-space{
-	margin-top: 65px;
+	vertical-align: middle;
+}
+
+.visual-description{
+	margin-bottom: 70px;
 }
 
 .btn{

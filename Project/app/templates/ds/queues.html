@@ -1,18 +1,28 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/queues.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-queues" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-6 col-md-6">
+	<div class= "text-center visualisation-space col-sm-5 col-md-5">
 		Visualisation
 	</div>
-	<div class= "text-center controls-space col-sm-6 col-md-6">
-		<ul class="list-unstyled">
-			<li><button class="btn waves-effect waves-teal">Queue()</button></li>
-			<li><button class="btn waves-effect waves-teal">enqueue()</button></li>
-			<li><button class="btn waves-effect waves-teal">dequeue()</button></li>
-			<li><button class="btn waves-effect waves-teal">size()</button></li>
-			<li><button class="btn waves-effect waves-teal">first()</button></li>
-			<li><button class="btn waves-effect waves-teal">isEmpty()</button></li>
-		</ul>
+	<div class= "text-center controls-space col-sm-7 col-md-7">
+		<div class="row visual-description">
+			<h4>A Video Streaming Application</h4>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		</div>
+		<div class="row">
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_queues_new" class="btn waves-effect waves-teal"><b>newQueue()</b> <i>(clear buffer)</i></button></li>
+				<li><button id="btn_queues_enqueue" class="btn waves-effect waves-teal"><b>enqueue()</b> <i>(get, buffer frame)</i></button></li>
+				<li><button id="btn_queues_dequeue" class="btn waves-effect waves-teal"><b>dequeue()</b> <i>(debuffer, play frame)</i></button></li>
+			</ul>
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_queues_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(buffer size)</i> </button></li>
+				<li><button id="btn_queues_first" class="btn waves-effect waves-teal"><b>first()</b> <i>(first frame)</i></button></li>
+				<li><button id="btn_queues_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(no frames left?)</i></button></li>
+			</ul>
+		</div>
 	</div>
 </div>
 

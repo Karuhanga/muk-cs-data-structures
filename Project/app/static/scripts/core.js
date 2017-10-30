@@ -127,6 +127,7 @@ function loadProjectPage() {
 	$('#content').load('the_project.html');
 	document.location.hash= "about-the-project";
 	$('title').text("The Project | Data Structures and Algorithms");
+	$('#title').text("The Project");
 }
 
 function loadDataPage(element) {
@@ -140,6 +141,7 @@ function loadDataPage(element) {
 	$('#content').load(PATH);
 	document.location.hash= element.text();
 	$('title').text(element.text().concat(" | Data Structures and Algorithms"));
+	$('#title').text(element.text())
 }
 
 

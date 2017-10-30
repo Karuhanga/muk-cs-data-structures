@@ -1,18 +1,28 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/stacks.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-stacks" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-6 col-md-6">
+	<div class= "text-center visualisation-space col-sm-5 col-md-5">
 		Visualisation
 	</div>
-	<div class= "text-center controls-space col-sm-6 col-md-6">
-		<ul class="list-unstyled">
-			<li><button class="btn waves-effect waves-teal">Stack()</button></li>
-			<li><button class="btn waves-effect waves-teal">peek()</button></li>
-			<li><button class="btn waves-effect waves-teal">size()</button></li>
-			<li><button class="btn waves-effect waves-teal">isEmpty()</button></li>
-			<li><button class="btn waves-effect waves-teal">push()</button></li>
-			<li><button class="btn waves-effect waves-teal">pop()</button></li>
-		</ul>
+	<div class= "text-center controls-space col-sm-7 col-md-7">
+		<div class="row visual-description">
+			<h4>A Text Editor</h4>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		</div>
+		<div class="row">
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_stacks_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
+				<li><button id="btn_stacks_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
+				<li><button id="btn_stacks_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
+			</ul>
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_stacks_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
+				<li><button id="btn_stacks_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
+				<li><button id="btn_stacks_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
+			</ul>
+		</div>
 	</div>
 </div>
 

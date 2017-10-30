@@ -1,20 +1,30 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/linked_lists.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-linked_lists" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-6 col-md-6">
+	<div class= "text-center visualisation-space col-sm-5 col-md-5">
 		Visualisation
 	</div>
-	<div class= "text-center controls-space col-sm-6 col-md-6">
-		<ul class="list-unstyled">
-			<li><button id="linkedList" class="btn waves-effect waves-teal">LinkedList()</button></li>
-			<li><button id="size" class="btn waves-effect waves-teal">size()</button></li>
-			<li><button id="isEmpty" class="btn waves-effect waves-teal">isEmpty()</button></li>
-			<li><button id="first" class="btn waves-effect waves-teal">first()</button></li>
-			<li><button id="last" class="btn waves-effect waves-teal">last()</button></li>
-			<li><button id="addFirst" class="btn waves-effect waves-teal">addFirst()</button></li>
-			<li><button id="addLast" class="btn waves-effect waves-teal">addLast()</button></li>
-			<li><button id="removeFirst" class="btn waves-effect waves-teal">removeFirst()</button></li>
-		</ul>
+	<div class= "text-center controls-space col-sm-7 col-md-7">
+		<div class="row visual-description">
+			<h4>A Music Playlist</h4>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		</div>
+		<div class="row">
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_linked_lists_last" class="btn waves-effect waves-teal"><b>last()</b> <i>(skip to last)</i></button></li>
+				<li><button id="btn_linked_lists_addfirst" class="btn waves-effect waves-teal"><b>addFirst()</b> <i>(add best track)</i></button></li>
+				<li><button id="btn_linked_lists_addlast" class="btn waves-effect waves-teal"><b>addLast()</b> <i>(add worst track)</i></button></li>
+				<li><button id="btn_linked_lists_new" class="btn waves-effect waves-teal"><b>newLinkedList()</b> <i>(clear playlist)</i></button></li>
+			</ul>
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_linked_lists_first" class="btn waves-effect waves-teal"><b>first()</b> <i>(skip to first)</i></button></li>
+				<li><button id="btn_linked_lists_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(no. of tracks)</i> </button></li>
+				<li><button id="btn_linked_lists_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(no tracks?)</i></button></li>
+				<li><button id="btn_linked_lists_removefirst" class="btn waves-effect waves-teal"><b>removeFirst()</b> <i>(remove best track)</i></button></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
