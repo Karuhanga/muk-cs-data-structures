@@ -15,6 +15,10 @@ function onLoad() {
 		closeDrawer();
 	})
 
+	$('#label-cp').bind('click', function (){
+		toggleMenu($('#cp'));
+	})
+
 	$('#label-ds').bind('click', function (){
 		toggleMenu($('#ds'));
 	})
