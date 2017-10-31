@@ -124,7 +124,7 @@ function loadProjectPage() {
 	hideFabs();
 	hideControls();
 	closeDrawer();
-	$('#content').load('the_project.html');
+	$('#content').load('the_project');
 	document.location.hash= "about-the-project";
 	$('title').text("The Project | Data Structures and Algorithms");
 	$('#title').text("The Project");
@@ -137,7 +137,7 @@ function loadDataPage(element) {
 	if (element.parent().attr('id')!='ds') {
 		showControls();
 	}
-	var PATH= element.parent().attr('id').concat('/', element.attr('id'), '.html');
+	var PATH= element.parent().attr('id').concat('/', element.attr('id'));
 	$('#content').load(PATH);
 	document.location.hash= element.text();
 	$('title').text(element.text().concat(" | Data Structures and Algorithms"));
