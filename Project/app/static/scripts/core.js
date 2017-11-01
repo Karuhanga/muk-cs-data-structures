@@ -138,9 +138,9 @@ function loadDataPage(element) {
 	showFabs();
 	hideControls();
 	closeDrawer();
-	if (element.parent().attr('id')!='ds') {
-		showControls();
-	}
+//	if (element.parent().attr('id')!='ds') {
+//		showControls();
+//	}
 	var PATH= element.parent().attr('id').concat('/', element.attr('id'));
 	$('#content').load(PATH);
 	document.location.hash= element.text();

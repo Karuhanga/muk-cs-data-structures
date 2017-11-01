@@ -140,22 +140,16 @@ body{
 	padding: 0px;
 }
 
-#fab1{
+#fab2{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
 }
 
-#fab2{
-	position: absolute;
-	right: 20px;
-	bottom: 85px;
-}
-
 #fab3{
 	position: absolute;
 	right: 20px;
-	bottom: 150px;
+	bottom: 85px;
 }
 
 #drawer-icon{
@@ -179,22 +173,16 @@ body{
 	vertical-align: middle;
 }
 
-#name1{
+#name2{
 	position: absolute;
 	right: 80px;
 	bottom: 20px !important;
 }
 
-#name2{
-	position: absolute;
-	right: 80px;
-	bottom: 85px !important;
-}
-
 #name3{
 	position: absolute;
 	right: 80px;
-	bottom: 150px !important;
+	bottom: 85px !important;
 }
 
 #name4{

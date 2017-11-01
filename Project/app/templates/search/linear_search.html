@@ -1,2 +1,78 @@
+<script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/search/linear_search.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
-<div class="text-center"><h3>Linear Search...</h3><h5>...Still in the works!</h5></div>
+<div id="container-visualisation-linear_search" class="row height-100">
+	<div class= "text-center visualisation-space col-sm-5 col-md-5">
+		Visualisation
+	</div>
+	<div class= "text-center controls-space col-sm-7 col-md-7">
+		<div class="row visual-description">
+			<h4>People you may know</h4>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		</div>
+		<div class="row">
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_linear_search_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
+				<li><button id="btn_linear_search_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
+				<li><button id="btn_linear_search_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
+			</ul>
+			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_linear_search_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
+				<li><button id="btn_linear_search_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
+				<li><button id="btn_linear_search_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--This jumps straight into a div(#content) with the class .container -->
+<div class="my-row container-summary-linear_search row">
+	<div id="intro" class="height-100 col-md-6 col-sm-6">
+		<div class="height-80 card card-1 teal lighten-4">
+			<div class="card-content">
+				<div class="card-title">
+					<h5>A little literature...</h5>
+				</div>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="intro-ds" class="height-100 col-md-6 col-sm-6">
+		<div class="height-80 card card-1 teal lighten-4">
+			<div class="card-content">
+				<div class="card-title">
+					<h5>Main Applications</h5>
+				</div>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-summary-linear_search my-row row">
+	<div id="about" class="height-100 col-md-6 col-sm-6">
+		<div class="height-80 card card-1 teal lighten-4">
+			<div class="card-content">
+				<div class="card-title">
+					<h5>Advantages</h5>
+				</div>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+	<div id="the-team" class="height-100 col-md-6 col-sm-6">
+		<div class="height-80 card card-1 teal lighten-4">
+			<div class="card-content">
+				<div class="card-title">
+					<h5>Drawbacks</h5>
+				</div>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			</div>
+		</div>
+	</div>
+</div>
