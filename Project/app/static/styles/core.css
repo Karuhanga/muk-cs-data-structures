@@ -31,7 +31,7 @@ body{
 	height: 100%; /* 100% Full-height */
     width: 100%; 
     position: fixed; /* Stay in place */
-    padding-top: 30px;
+    padding-top: 5px;
 	overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -279,10 +279,12 @@ body{
 
 .controls-space{
 	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .visual-description{
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 	font-size: 20px !important;
 	text-justify: inter-cluster;
 }
@@ -328,3 +330,8 @@ textarea{
 	width: 55px;
 	height: 55px;
 }
+
+/* .recursion-element{
+	width: 100px;
+	height: 100px;
+} */

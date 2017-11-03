@@ -1,10 +1,33 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/cp/recursion.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-recursion" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-5 col-md-5">
-		Visualisation
+	<div class= "text-center visualisation-space col-sm-7 col-md-7">
+		<h4 class="row">Visualisation</h4>
+		<!-- (div.row>(span.col-sm-4.col-md-4.recursion-element)*3)*4		 -->
+		<div class="row">
+				<span class="col-sm-3 col-md-3 recursion-element"></span>
+				<span class="col-sm-6 col-md-6 recursion-element">Root DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-3 col-md-3 recursion-element"></span>
+			</div>
+		<div class="row">
+				<span class="col-sm-1 col-md-1 recursion-element"></span>
+				<span class="col-sm-3 col-md-3 recursion-element">Local DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-4 col-md-4 recursion-element"></span>
+				<span class="col-sm-3 col-md-3 recursion-element">TLD DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-1 col-md-1 recursion-element"></span>
+			</div>
+		<div class="row">
+			<span class="col-sm-1 col-md-1 recursion-element"></span>
+			<span class="col-sm-3 col-md-3 recursion-element">
+				Requesting Host<br>
+				<img src="{{ url_for('static', filename = 'img/computer.png') }}" alt="Server">
+			</span>
+			<span class="col-sm-4 col-md-4 recursion-element"></span>
+			<span class="col-sm-3 col-md-3 recursion-element">Authoritative Name Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+			<span class="col-sm-1 col-md-1 recursion-element"></span>
+		</div>
 	</div>
-	<div class= "text-center controls-space col-sm-7 col-md-7">
+	<div class= "text-center controls-space col-sm-5 col-md-5">
 		<div class="row visual-description">
 			<h4>DNS Name Resolution</h4>
 			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
@@ -12,15 +35,13 @@
 			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 		</div>
 		<div class="row">
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_recursion_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
-				<li><button id="btn_recursion_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
-				<li><button id="btn_recursion_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
-			</ul>
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_recursion_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
-				<li><button id="btn_recursion_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
-				<li><button id="btn_recursion_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
+			<ul class="list-unstyled">
+				<li><button id="btn_recursion_next" class="btn waves-effect waves-teal"><b>next()</b> <i>(do action)</i></button></li>
+				<li>
+					<span id="recursion_play" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/play.png') }}" alt="Play"></span>
+					<span id="recursion_pause" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/stop.png') }}" alt="Pause"></span>
+					<span id="recursion_restart" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/replay.png') }}" alt="Restart"></span>
+				</li>
 			</ul>
 		</div>
 	</div>
