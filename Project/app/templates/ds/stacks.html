@@ -2,7 +2,32 @@
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-stacks" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-5 col-md-5">
-		Visualisation
+		<h4 class="row">Visualisation</h4>
+		<textarea autocomplete="off" onpaste="return false" ondrag="return false" ondrop="return false" class="row" name="text_area" id="text_area" cols="10" rows="30"></textarea>
+		<span class="row"><span id="btn_bold" class="btn-small btn uppercase waves-effect waves-teal">B</span><span id="btn_italic" class="btn-small btn uppercase waves-effect waves-teal">I</span><span id="btn_underline" class="btn-small btn uppercase waves-effect waves-teal">U</span></span>
+		
+		<div class="data_area row">
+			<table class="table-bordered teal lighten-4" id="stack">
+				<tr>
+					<td id="0" class="element"></td>
+				</tr>
+				<tr>
+					<td id="1" class="element"></td>
+				</tr>
+				<tr>
+					<td id="2" class="element"></td>
+				</tr>
+				<tr>
+					<td id="3" class="element"></td>
+				</tr>
+				<tr>
+					<td id="4" class="element"></td>
+				</tr>
+				<tr>
+					<td id="5" class="element"></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	<div class= "text-center controls-space col-sm-7 col-md-7">
 		<div class="row visual-description">
@@ -13,14 +38,14 @@
 		</div>
 		<div class="row">
 			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_stacks_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
+				<li><button id="btn_stacks_push" class="disabled btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
 				<li><button id="btn_stacks_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
 				<li><button id="btn_stacks_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
 			</ul>
 			<ul class="list-unstyled col-md-6 col-sm-6">
+				<li><button id="btn_stacks_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos left?)</i></button></li>
 				<li><button id="btn_stacks_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
-				<li><button id="btn_stacks_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
-				<li><button id="btn_stacks_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
+				<li><button id="btn_stacks_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(check next action)</i></button></li>
 			</ul>
 		</div>
 	</div>

@@ -1,0 +1,16 @@
+HTTrack3.48-21 launched on Fri, 03 Nov 2017 03:42:53 at https://visualgo.net/bn/sorting
+(winhttrack https://visualgo.net/bn/sorting -W -O "/home/karuhanga/Documents/MUK_Cmp_Sci/Yr.2/Sm.1/Data Structures and Algorithms/Project/Extra_Resources/Sorting/Sorting" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+03:42:53	Warning: 	Cache: damaged cache, trying to repair
+03:42:53	Warning: 	Cache: 0 bytes successfully recovered in 0 entries
+03:42:53	Warning: 	Cache: error trying to open the cache
+03:42:55	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://visualgo.net/robots.txt (from primary/primary)
+03:42:55	Warning: 	Retry after error -5 (Unable to get server's address: Temporary failure in name resolution) at link https://visualgo.net/bn/sorting (from primary/primary)
+03:42:56	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://visualgo.net/bn/sorting (from primary/primary)
+03:42:56	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://visualgo.net/bn/sorting (from primary/primary)
+03:42:56	Warning: 	No data seems to have been transferred during this session! : restoring previous one!

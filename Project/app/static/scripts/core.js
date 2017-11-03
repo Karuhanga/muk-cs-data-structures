@@ -1,6 +1,7 @@
 var TIME_SHORT= 100;
 var TIME_MEDIUM= 200;
 var TIME_LONG= 500;
+var TIME_VERY_LONG= 1000;
 
 $(document).ready(function (){
 	onLoad();
