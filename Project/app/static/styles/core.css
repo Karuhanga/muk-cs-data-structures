@@ -283,6 +283,8 @@ body{
 
 .visual-description{
 	margin-bottom: 70px;
+	font-size: 20px !important;
+	text-justify: inter-cluster;
 }
 
 .btn{
@@ -319,10 +321,10 @@ textarea{
 }
 
 #stack{
-	margin-left: 50%;
+	margin-left: 45%;
 }
 
 .element{
-	width: 50px;
-	height: 50px;
+	width: 55px;
+	height: 55px;
 }

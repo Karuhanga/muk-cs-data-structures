@@ -31,19 +31,23 @@ function initialize() {
 
 	$('#text_area').bind('input', function(){
 		changeResolver();
+		updateVisual();
 	})
 
 	$('#btn_bold').bind('click', function(){
 		onFormatText(ACTION_BOLD);
 		STACK.push([ACTION_BOLD]);
+		updateVisual();
 	});
 	$('#btn_italic').bind('click', function(){
 		onFormatText(ACTION_ITALIC);
 		STACK.push([ACTION_ITALIC]);
+		updateVisual();
 	});
 	$('#btn_underline').bind('click', function(){
 		onFormatText(ACTION_UNDERLINE);
 		STACK.push([ACTION_UNDERLINE]);
+		updateVisual();
 	});
 
 	$('#btn_stacks_size').bind('click', function(){
@@ -64,6 +68,7 @@ function initialize() {
 
 	$('#btn_stacks_pop').bind('click', function(){
 		pop();
+		updateVisual();
 	});
 }
 
@@ -73,7 +78,7 @@ function onFormatText(aspect) {
 
 function stack(){
 	STACK= []
-	emptyStackVisual();
+	updateVisual();
 }
 
 function undosleft() {
@@ -196,4 +201,13 @@ function disableUndoRedo() {
 			return;
 		}
 	});
+}
+
+function updateVisual() {
+	$('.element').text("");
+	var limit= STACK.length;
+	limit= (limit>6)? 6:limit;
+	for (var index = 0, pos=limit-1; index < limit; index++, pos--){
+		$('#'+index.toString()).text(STACK[pos][0]);
+	}
 }
