@@ -241,8 +241,8 @@ function render(position) {
 			translateX: (TRANSLATIONS[element][position][0]*34),
 			translateY: (TRANSLATIONS[element][position][1]*300),
 			duration: TIME_VERY_VERY_VERY_LONG
-		})
-	})
+		});
+	});
 }
 
 function colorize(element, color) {
