@@ -6,33 +6,49 @@
 		<!-- (div.row>(span.col-sm-4.col-md-4.recursion-element)*3)*4		 -->
 		<div class="row">
 				<span class="col-sm-3 col-md-3 recursion-element"></span>
-				<span class="col-sm-6 col-md-6 recursion-element">Root DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-6 col-md-6 recursion-element">Root DNS Server
+					<br>
+					<img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server">
+					<span id="animation_10" class="payload">DNS</span>
+				</span>
 				<span class="col-sm-3 col-md-3 recursion-element"></span>
 			</div>
 		<div class="row">
 				<span class="col-sm-1 col-md-1 recursion-element"></span>
-				<span class="col-sm-3 col-md-3 recursion-element">Local DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-3 col-md-3 recursion-element">Local DNS Server
+					<br>
+					<img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server">
+					<span id="animation_7" class="payload">DNS</span>
+				</span>
 				<span class="col-sm-4 col-md-4 recursion-element"></span>
-				<span class="col-sm-3 col-md-3 recursion-element">TLD DNS Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+				<span class="col-sm-3 col-md-3 recursion-element">TLD DNS Server<br>
+					<img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server">
+					<span id="animation_13" class="payload">DNS</span>
+				</span>
 				<span class="col-sm-1 col-md-1 recursion-element"></span>
 			</div>
 		<div class="row">
 			<span class="col-sm-1 col-md-1 recursion-element"></span>
-			<span class="col-sm-3 col-md-3 recursion-element">
-				Requesting Host<br>
+			<span class="col-sm-3 col-md-3 recursion-element">Requesting Host
+				<br>
 				<img src="{{ url_for('static', filename = 'img/computer.png') }}" alt="Server">
+				<span id="animation_4" class="payload">DNS</span>
 			</span>
 			<span class="col-sm-4 col-md-4 recursion-element"></span>
-			<span class="col-sm-3 col-md-3 recursion-element">Authoritative Name Server<br> <img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server"></span>
+			<span class="col-sm-3 col-md-3 recursion-element">Authoritative Name Server
+				<br>
+				<img src="{{ url_for('static', filename = 'img/server.png') }}" alt="Server">
+				<span id="animation_14" class="payload">DNS</span>
+			</span>
 			<span class="col-sm-1 col-md-1 recursion-element"></span>
 		</div>
 	</div>
 	<div class= "text-center controls-space col-sm-5 col-md-5">
 		<div class="row visual-description">
 			<h4>DNS Name Resolution</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>An excellent illustration of the use of recursion is during domain name:ip resolution. <br>
+			A user's device makes a DNS request to servers which perform a simple recursive procedure: <br>
+			Check if I have the mapping, if I do not, request for it and then return it.</p>
 		</div>
 		<div class="row">
 			<ul class="list-unstyled">
@@ -41,6 +57,11 @@
 					<span id="recursion_play" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/play.png') }}" alt="Play"></span>
 					<span id="recursion_pause" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/stop.png') }}" alt="Pause"></span>
 					<span id="recursion_restart" class="faby card-1 btn waves-effect waves-teal btn-floating btn-large"><img src="{{ url_for('static', filename = 'img/replay.png') }}" alt="Restart"></span>
+				</li>
+				<li>
+					<span id="name_play" class="names toast-n teal lighten-1">Play</span>
+					<span id="name_pause" class="names toast-n teal lighten-1">Pause</span>
+					<span id="name_restart" class="names toast-n teal lighten-1">Restart</span>
 				</li>
 			</ul>
 		</div>

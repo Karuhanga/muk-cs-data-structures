@@ -2,6 +2,8 @@ var TIME_SHORT= 100;
 var TIME_MEDIUM= 200;
 var TIME_LONG= 500;
 var TIME_VERY_LONG= 1000;
+var TIME_VERY_VERY_LONG= 2000;
+var TIME_VERY_VERY_VERY_LONG= 3000;
 
 $(document).ready(function (){
 	onLoad();
