@@ -227,11 +227,11 @@ var TRANSLATIONS= {
 };
 
 function toID(element) {
-	return "#shape_"+element.toString();
+	return "#shape_sort_"+element.toString();
 }
 
 function toWrapper(element) {
-	return "#wrapper_"+element.toString();
+	return "#wrapper_sort_"+element.toString();
 }
 
 function render(position) {

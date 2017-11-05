@@ -459,11 +459,11 @@ var ACTION_QUEUE= [
 ]
 
 function toID(element) {
-	return "#shape_"+element.toString();
+	return "#shape_bubble_sort_"+element.toString();
 }
 
 function toWrapper(element) {
-	return "#wrapper_"+element.toString();
+	return "#wrapper_bubble_sort_"+element.toString();
 }
 
 function move(element, direction) {
