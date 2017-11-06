@@ -15,6 +15,7 @@ function showVisualisation() {
 	$('.container-summary-bubble_sort').hide();
 	$('#container-visualisation-bubble_sort').show();
 	showControls();
+	restart();
 }
 
 function initialize() {
@@ -56,23 +57,25 @@ var ABSOLUTE_POSITIONS= {
 	5: [0,0]
 }
 
-var BASE_POSITIONS= {
-	2: [0,0],
-	18: [0,0],
-	3: [0,0],
-	10: [0,0],
-	17: [0,0],
-	14: [0,0],
-	12: [0,0],
-	7: [0,0],
-	11: [0,0],
-	8: [0,0],
-	4: [0,0],
-	13: [0,0],
-	16: [0,0],
-	19: [0,0],
-	15: [0,0],
-	5: [0,0]
+function base_positions() {
+	ABSOLUTE_POSITIONS= {
+		2: [0,0],
+		18: [0,0],
+		3: [0,0],
+		10: [0,0],
+		17: [0,0],
+		14: [0,0],
+		12: [0,0],
+		7: [0,0],
+		11: [0,0],
+		8: [0,0],
+		4: [0,0],
+		13: [0,0],
+		16: [0,0],
+		19: [0,0],
+		15: [0,0],
+		5: [0,0]
+	};
 }
 
 var INDEX= 0;
@@ -456,7 +459,7 @@ var ACTION_QUEUE= [
 	[[2, UP]],
 	[SHADE, 3],
 	[SHADE,2]
-]
+];
 
 function toID(element) {
 	return "#shape_bubble_sort_"+element.toString();
@@ -487,7 +490,8 @@ function move(element, direction) {
 }
 
 function restart() {
-	ABSOLUTE_POSITIONS= BASE_POSITIONS;
+	pause();
+	base_positions();
 	ELEMENTS.forEach(function(element) {
 		move(element, NONE);
 	}, this);
