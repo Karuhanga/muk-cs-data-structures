@@ -5,7 +5,7 @@
 		<h4 class="row">Visualisation</h4>
 		<textarea autocomplete="off" onpaste="return false" ondrag="return false" ondrop="return false" class="row" name="text_area" id="text_area" cols="10" rows="30"></textarea>
 		<span class="row"><span id="btn_bold" class="btn-small btn uppercase waves-effect waves-teal">B</span><span id="btn_italic" class="btn-small btn uppercase waves-effect waves-teal">I</span><span id="btn_underline" class="btn-small btn uppercase waves-effect waves-teal">U</span></span>
-		
+
 		<div class="data_area row">
 			<table class="table-bordered teal lighten-4" id="stack">
 				<tr>
@@ -55,11 +55,11 @@
 		<div class="height-80 card card-1 teal lighten-4">
 			<div class="card-content">
 				<div class="card-title">
-					<h5>A little literature...</h5>
+					<h5>Stacks</h5>
 				</div>
 				<p>
 					Data structures and algorithms are two concepts that complement each other when it comes to writing clean, fast, concise, correct and efficient software, and code in general. When using these concepts, it is important to first define and fully layout the problem to enable the programmer choose appropriate Data Structures and Algorithms for the task at hand.
-					
+
 					A stack is a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle.
 					A user may insert objects into a stack at any time, but may only access or remove the most recently inserted object that remains (at the so-called “top” of the stack).
 				</p>
@@ -74,12 +74,12 @@
 				</div>
 				<p>
 					Data Structures are the programmatic way of storing data so that it can be retrieved and used efficiently. Every mature software project uses various types of data structures in one way or the other. Data Structures are therefore about rendering data elements in terms of some relationship, for better organization and storage.
-					
+
 
 					A good use for a stack would be the undo/redo feature.
 					One way to emulate a stack with a data structure is with a singly linked list where you can only add and remove nodes from the head or tail of the list (depending on implementation). An easy and straightforward application of this type of data structure would be a reverse polish notation calculator where values can be pushed onto the data structure and then popped when one comes across an arithmetic symbol.
-					
-					
+
+
 					Stacks provide an automatic means of backtracking because variables are popped from the stack in the reverse order they were pushed onto the stack. Thus you can always find your way back to a given state. Every thread in a process has its own built-in stack, making it possible for functions to know from where they were called and thus return control to their callers. The callers simply push the return address onto the stack before passing control to the callee. The return address stays on the stack until the callee is ready to return control to the caller. Thus functions can call functions (including recursive calls to themselves) without losing track of where each individual call came from. The stack essentially provides a "breadcrumb trail". The stack is also used to store a function's local arguments since these only need to remain in memory when the function is actually invoked (they will fall from scope as soon as the function returns). Callers can also pass arguments to functions by pushing them onto the stack immediately after the return address. The stack can also be used to store a function's exception handlers, so when an exception occurs, the stack can automatically "unwind" back through the return addresses to locate a suitable handler.
 					Everytime the user enters something, if you need to reverse, just pop it off the top of the undo stack and push it onto the redo stack.
 					Besides the above feature, there are a bunch of other uses of stacks not limited to;
