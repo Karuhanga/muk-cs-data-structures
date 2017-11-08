@@ -511,6 +511,7 @@ function nextMove() {
 
 	INDEX++;
 	if (INDEX==ACTION_QUEUE.length) {
+		console.log(ABSOLUTE_POSITIONS);
 		INDEX= 0;
 		restart();
 	}
