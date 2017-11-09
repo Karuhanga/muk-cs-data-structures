@@ -2,15 +2,16 @@
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-graphs" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-6 col-md-6">
-		Visualisation
+		<h4>Visualisation</h4>
+		<img src="{{ url_for('static', filename = 'img/graph_2.png') }}" alt="Friends graph">
 	</div>
 	<div class= "text-center controls-space col-sm-6 col-md-6">
 		<div class="visual-description">
 			<h4>People you may know</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<br><br><br><br><br><br><br>
+			<p> A use of graphs that often hides in plain sight is the way social media and connection, viral based companies use the concept of graph links to figure out who you're friends could be based on how many other friends you have in common with them.</p>
+			<p>The same technique is applied to products and posts one <i>likes</i> and <i>follows</i> to possibly recommend similar products.</p>
+			<br>
+			<img src="{{ url_for('static', filename = 'img/graph.png') }}" alt="Interest graph">
 		</div>
 	</div>
 </div>
