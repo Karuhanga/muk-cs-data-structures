@@ -8,9 +8,11 @@ function showSummary() {
 	$('#container-data-bubble_sort').hide();
 	$('.container-summary-bubble_sort').show();
 	hideControls();
+	pause();
 }
 
 function showVisualisation() {
+	pause();
 	$('#container-data-bubble_sort').hide();
 	$('.container-summary-bubble_sort').hide();
 	$('#container-visualisation-bubble_sort').show();

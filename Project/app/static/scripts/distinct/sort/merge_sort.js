@@ -8,9 +8,11 @@ function showSummary() {
 	$('#container-data-merge_sort').hide();
 	$('.container-summary-merge_sort').show();
 	hideControls();
+	pause();
 }
 
 function showVisualisation() {
+	pause();
 	$('#container-data-merge_sort').hide();
 	$('.container-summary-merge_sort').hide();
 	$('#container-visualisation-merge_sort').show();

@@ -3,6 +3,7 @@ $(document).ready(function (){
 })
 
 function showSummary() {
+	pause();
 	$('#container-visualisation-quick_sort').hide();
 	$('#container-data-quick_sort').hide();
 	$('.container-summary-quick_sort').show();

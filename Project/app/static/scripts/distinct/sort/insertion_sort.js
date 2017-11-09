@@ -8,9 +8,11 @@ function showSummary() {
 	$('#container-data-insertion_sort').hide();
 	$('.container-summary-insertion_sort').show();
 	hideControls();
+	pause();
 }
 
 function showVisualisation() {
+	pause();
 	$('#container-data-insertion_sort').hide();
 	$('.container-summary-insertion_sort').hide();
 	$('#container-visualisation-insertion_sort').show();
