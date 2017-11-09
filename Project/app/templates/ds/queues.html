@@ -35,9 +35,11 @@
 					<h5>Queues</h5>
 				</div>
 				<p>
-					Data structures and algorithms are two concepts that complement each other when it comes to writing clean, fast, concise, correct and efficient software, and code in general. When using these concepts, it is important to first define and fully layout the problem to enable the programmer choose appropriate Data Structures and Algorithms for the task at hand.
-					 Queues are related to ordered lists. With the queue, the new pieces of data are placed at the rear of the data structure, and the deletions are placed at the front. The first piece of data entered into the data structure is the first piece removed from the structure. With queues, data does not remain in the data structure for as long as with stacks. Queues can be compared to lines at the store, where the first person in line is the first person to receive a service.
-					 While queues are more complex than stacks, the array makes queues easy by placing the newest element at the end and moving each element over one step when one piece of data is removed from the queue. Queues are helpful when multiple consumers share a particular process. For example, a website might only have so much space to allow consumers to download a particular file. With a stack, some consumer might have to wait much longer to download the file than the newest consumers. Queues are also useful when the client does not necessarily receive the data at the same time the data is sent.
+				A queue is a list from which elements are deleted from one end of the structure, called the front
+				(this operation is called dequeue), and new elements are added to the other end, called the rear
+				(this operation iscalled enqueue). Consequently, a queue operates in a “first-in–first-out” (FIFO)
+				fashion—akin to a queue of customers served by a single teller in a bank. Queues
+				also have many important applications, including several algorithms for graph problems.
 				</p>
 
 			</div>
@@ -50,17 +52,12 @@
 					<h5>Main Applications</h5>
 				</div>
 
-				<p>Queues are a useful representation of problems for different applications.
+				<p>
+					Queues are a useful representation of problems for different applications.
 					 For example, jobs to a network printer is enqueued so that the earlier a job is submitted the earlier it will be printed. Breadth first searches use queues.
 					 When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
 					 When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
 					 In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
-
-
-					Data Structures are the programmatic way of storing data so that it can be retrieved and used
-					efficiently. Every mature software project uses various types of data structures in one way or
-					the other. Data Structures are therefore about rendering data elements in terms of some
-					relationship, for better organization and storage.
 				</p>
 
 			</div>
@@ -76,11 +73,9 @@
 					<h5>Advantages</h5>
 				</div>
 
-				<p>This project is part of a continuous course assesment for CSC 2100, Introduction to Data Structures and Algorithms and was implemented by Undergraduate Students of Computer Science at Makerere University in Kampala, Uganda.
-
-
+				<p>
 				Data queues are a fast method of inter-process communication. Data queues free up jobs from performing some work, which can lead to a better response time and an overall improvement in system performance.
-				Data queues serve as the fastest form of asynchronous communication between two different tasks, since there is less overhead than with database files and data areas.The main advantages is that adding or removing elements can be done quickly and efficiently because you would just add elements to the end of the queue or remove them from the front of the queue.Queues are helpful when multiple consumers share a particular process. For example, a website might only have so much space to allow consumers to download a particular file.</p>
+				Data queues serve as the fastest form of asynchronous communication between two different tasks.The main advantages is that adding or removing elements can be done quickly and efficiently. Queues are helpful when multiple consumers share a particular process, for example, a website might only have so much space to allow consumers to download a particular file.</p>
 			</div>
 		</div>
 	</div>
@@ -91,20 +86,10 @@
 					<h5>Drawbacks</h5>
 				</div>
 
-				<p>The main disadvantages is that a queue is not readily searchable (sure there are hacks around it but it is not supposed to be searchable) and adding or removing elements 	from the middle of the queue is very complex (again it is not MEANT to allow elements to be removed from the middle).
-					Queues are very democratic in that the first item in the queue gets processed first - FIFO. This is NOT what is wanted in all cases. Think of the Emergency Department in a hospital. It's not FIFO - it's who needs treatment first.
-					In queues there is a fixed entry point and a fixed exit point.
-					since structures are heavily used in sorting, searching and indexing these kind of restriction increases the time and space requirements of the algorithm.
+				<p>The main disadvantages is that a queue is not readily searchable and adding or removing elements from the middle of the queue is very complex.
+					Queues are very democratic in that the first item in the queue gets processed first - FIFO. This is NOT what is wanted in all cases, for example in emergency departments of a hospital.
+					In queues there is a fixed entry point and a fixed exit point and since structures are heavily used in sorting, searching and indexing these kind of restriction increases the time and space requirements of the algorithm.
 					ultimately the program will be less efficient and slow.
-					This project was implemented by the following individuals;</p>
-				<ul id="names" class="list-unstyled">
-					<li><a href="https://github.com/lukyamuziB">Lukyamuzi Ben</a> </li>
-					<li><a href="https://github.com/karuhanga">Karuhanga Lincoln</a> </li>
-					<li><a href="https://github.com/DonAine">Ainebyoona Don</a> </li>
-					<li><a href="https://github.com/mosey">Onyango Moses</a> </li>
-					<li><a href="https://github.com/Hxant">Mokili Isaac Janda</a> </li>
-					<li><a href="https://github.com/mubangizi">Mubangizi Allan</a> </li>
-				</ul>
 			</div>
 		</div>
 	</div>
