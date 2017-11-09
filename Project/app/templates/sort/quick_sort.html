@@ -1,29 +1,7 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/sort/quick_sort.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
-<div id="container-visualisation-quick_sort" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-5 col-md-5">
-		Visualisation
-	</div>
-	<div class= "text-center controls-space col-sm-7 col-md-7">
-		<div class="row visual-description">
-			<h4>People you may know</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-		</div>
-		<div class="row">
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_quick_sort_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
-				<li><button id="btn_quick_sort_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
-				<li><button id="btn_quick_sort_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
-			</ul>
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_quick_sort_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
-				<li><button id="btn_quick_sort_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
-				<li><button id="btn_quick_sort_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
-			</ul>
-		</div>
-	</div>
+<div id="container-visualisation-quick_sort" class="text-center row height-100">
+	<img type="img/gif" src="{{ url_for('static', filename = 'img/quick_sort.gif') }}" alt="Quick Sort Simulation">
 </div>
 
 <!--This jumps straight into a div(#content) with the class .container -->

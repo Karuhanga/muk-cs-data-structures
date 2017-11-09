@@ -7,9 +7,7 @@
 	<div class= "text-center controls-space col-sm-7 col-md-7">
 		<div class="row visual-description">
 			<h4>A Video Streaming Application</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>Video streaming utilities utilize a <i>buffer</i> to ensure a smooth user experience while watching a piece of content. Using this concept, incoming video content is placed in a queue and retrieved piece by piece, in order of entry, as it is rendered by the application</p>
 		</div>
 		<div class="row">
 			<ul class="list-unstyled col-md-6 col-sm-6">
@@ -35,13 +33,9 @@
 					<h5>Queues</h5>
 				</div>
 				<p>
-				A queue is a list from which elements are deleted from one end of the structure, called the front
-				(this operation is called dequeue), and new elements are added to the other end, called the rear
-				(this operation iscalled enqueue). Consequently, a queue operates in a “first-in–first-out” (FIFO)
-				fashion—akin to a queue of customers served by a single teller in a bank. Queues
-				also have many important applications, including several algorithms for graph problems.
+					 Queues are related to ordered lists. With the queue, the new pieces of data are placed at the rear of the data structure, and the deletions are done at the front. The first piece of data entered into the data structure is the first piece removed from the structure. Queues can be compared to lines at the store, where the first person in line is the first person to receive a service.
+					 While queues are more complex than stacks, the array makes queues easy by placing the newest element at the end and moving each element over one step when one piece of data is removed from the queue.
 				</p>
-
 			</div>
 		</div>
 	</div>
@@ -51,15 +45,12 @@
 				<div class="card-title">
 					<h5>Main Applications</h5>
 				</div>
-
-				<p>
-					Queues are a useful representation of problems for different applications.
+				<p>Queues are a useful representation of problems for different applications.
 					 For example, jobs to a network printer is enqueued so that the earlier a job is submitted the earlier it will be printed. Breadth first searches use queues.
 					 When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
 					 When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
 					 In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
 				</p>
-
 			</div>
 		</div>
 	</div>
@@ -72,10 +63,8 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-
-				<p>
 				Data queues are a fast method of inter-process communication. Data queues free up jobs from performing some work, which can lead to a better response time and an overall improvement in system performance.
-				Data queues serve as the fastest form of asynchronous communication between two different tasks.The main advantages is that adding or removing elements can be done quickly and efficiently. Queues are helpful when multiple consumers share a particular process, for example, a website might only have so much space to allow consumers to download a particular file.</p>
+				Data queues serve as the fastest form of asynchronous communication between two different tasks, since there is less overhead than with database files and data areas.The main advantages is that adding or removing elements can be done quickly and efficiently because you would just add elements to the end of the queue or remove them from the front of the queue.
 			</div>
 		</div>
 	</div>
@@ -85,11 +74,11 @@
 				<div class="card-title">
 					<h5>Drawbacks</h5>
 				</div>
-
-				<p>The main disadvantages is that a queue is not readily searchable and adding or removing elements from the middle of the queue is very complex.
-					Queues are very democratic in that the first item in the queue gets processed first - FIFO. This is NOT what is wanted in all cases, for example in emergency departments of a hospital.
-					In queues there is a fixed entry point and a fixed exit point and since structures are heavily used in sorting, searching and indexing these kind of restriction increases the time and space requirements of the algorithm.
-					ultimately the program will be less efficient and slow.
+				<p>The main disadvantages is that a queue is not readily searchable (sure there are hacks around it but it is not supposed to be searchable) and adding or removing elements from the middle of the queue is very complex (again it is not MEANT to allow elements to be removed from the middle).
+					Queues are very democratic in that the first item in the queue gets processed first - FIFO. This is NOT what is wanted in all cases. Think of the Emergency Department in a hospital. It's not FIFO - it's who needs treatment first.
+					In queues there is a fixed entry point and a fixed exit point.
+					Since structures are heavily used in sorting, searching and indexing these kind of restriction increases the time and space requirements of the algorithm.
+				</ul>
 			</div>
 		</div>
 	</div>

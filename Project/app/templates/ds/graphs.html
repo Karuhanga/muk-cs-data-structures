@@ -2,15 +2,16 @@
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-graphs" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-6 col-md-6">
-		Visualisation
+		<h4>Visualisation</h4>
+		<img src="{{ url_for('static', filename = 'img/graph_2.png') }}" alt="Friends graph">
 	</div>
 	<div class= "text-center controls-space col-sm-6 col-md-6">
 		<div class="visual-description">
 			<h4>People you may know</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<br><br><br><br><br><br><br>
+			<p> A use of graphs that often hides in plain sight is the way social media and connection, viral based companies use the concept of graph links to figure out who you're friends could be based on how many other friends you have in common with them.</p>
+			<p>The same technique is applied to products and posts one <i>likes</i> and <i>follows</i> to possibly recommend similar products.</p>
+			<br>
+			<img src="{{ url_for('static', filename = 'img/graph.png') }}" alt="Interest graph">
 		</div>
 	</div>
 </div>
@@ -51,13 +52,14 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-				<p> As functions and arrays, graphs have the following advantages;
-
-    				Simple and easy to understand
-    				Adapts easly to different kinds of graphs
-					Efficient access
-					Graphs can be constructed at run-time
-			    </p>
+				<h6> As functions and arrays, graphs have the following advantages;</h6>
+					<ul>
+						<li>Simple and easy to understand</li>
+						<li>Adapts easly to different kinds of graphs</li>
+						<li>Efficient access</li>
+						<li>Graphs can be constructed at run-time</li>
+					</ul>
+			    
 			</div>
 		</div>
 	</div>
@@ -67,15 +69,14 @@
 				<div class="card-title">
 					<h5>Drawbacks</h5>
 				</div>
-				<p> As functions and arrays, graphs have the following drawbacks;
-
-    				Cannot be extended to accomodate queries about the set of Vertices or the set of Edges.
-    				Depending upon the compiler that compiles the functions may not be very efficient. In fact the worst case time could be proportional to the number of vertices.
-    				The graph must be known statically at compile time.
-   					Requires that graph access be a Command rather than a computation.
-    				The domain of Vertices must be a type that can be used as an index into an array.
-
-</p>
+				<h6> As functions and arrays, graphs have the following drawbacks;</h6>
+				<ul>
+					<li>Cannot be extended to accomodate queries about the set of Vertices or the set of Edges.</li>
+					<li>Depending upon the compiler that compiles the functions may not be very efficient. In fact the worst case time could be proportional to the number of vertices.</li>
+					<li>The graph must be known statically at compile time.</li>
+					<li>Requires that graph access be a Command rather than a computation.</li>
+					<li>The domain of Vertices must be a type that can be used as an index into an array.</li>
+				</ul>
 			</div>
 		</div>
 	</div>

@@ -2,14 +2,13 @@
 <!--This jumps straight into a div(#content) with the class .container -->
 <div id="container-visualisation-linked_lists" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-5 col-md-5">
-		Visualisation
+		<h4>Visualisation</h4>
+		<img src="{{ url_for('static', filename = 'img/linked_list.png') }}" alt="Linked List">
 	</div>
 	<div class= "text-center controls-space col-sm-7 col-md-7">
 		<div class="row visual-description">
 			<h4>A Music Playlist</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>An excellent way to think of linked lists is like with a playlist. Each entry knows the ocation of the current song, and the next song to be played.</p>
 		</div>
 		<div class="row">
 			<ul class="list-unstyled col-md-6 col-sm-6">
@@ -36,11 +35,7 @@
 				<div class="card-title">
 					<h5>Linked Lists</h5>
 				</div>
-				<p>
-					A linked list is a sequence of zero or more elements called nodes, each
-					containing two kinds of information: some data and one or more links called
-					pointers to other nodes of the linked list.
-				</p>
+				<p>In computer science, a linked list is a linear collection of data elements, in which linear order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence.</p>
 			</div>
 		</div>
 	</div>
@@ -50,8 +45,7 @@
 				<div class="card-title">
 					<h5>Main Applications</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Linked lists are among the simplest and most common data structures. They can be used to implement several other common abstract data types, including lists, stacks, queues, associative arrays, and S-expressions.</p>
 			</div>
 		</div>
 	</div>
@@ -64,9 +58,11 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-					<p>Linked list is a dynamic data structure so it can grow and shrink at runtime by allocating and deallocating memeory. So there is no need to give initial size of linked list.
+					<p>A Linked list is a dynamic data structure so it can grow and shrink at runtime by allocating and deallocating memeory. So there is no need to give initial size of linked list.
 					Insertion and deletion of nodes are really easier. Unlike array here we don’t have to shift elements after insertion or deletion of an element. In linked list we just have to update the address present in next pointer of a node.
 					As size of linked list can increase or decrease at run time, there is no memory wastage. In case of array there is lot of memory wastage, like if we declare an array of size 10 and store only 6 elements in it then space of 4 elements are wasted. There is no such problem in linked list as memory is allocated only when required.
+					</p>
+
 			</div>
 		</div>
 	</div>
@@ -76,8 +72,7 @@
 				<div class="card-title">
 					<h5>Drawbacks</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Linked lists are not ideal when random data access is required, a job more suited to an array. A problem of data fragmentation also arises which has been known to slow down computers.</p>
 			</div>
 		</div>
 	</div>

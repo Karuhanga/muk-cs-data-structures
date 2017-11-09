@@ -1,28 +1,94 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'scripts/distinct/search/binary_search.js') }}"></script>
 <!--This jumps straight into a div(#content) with the class .container -->
-<div id="container-visualisation-binary_search" class="row height-100">
-	<div class= "text-center visualisation-space col-sm-5 col-md-5">
-		Visualisation
+<div id="container-visualisation-binary_search" class="text-center row height-100">
+	<div class="col-sm-10 col-md-10">
+		<h4>Visualization</h4>
+	
+
+		<svg id="wrapper_binary_search" class="shape">
+			<polygon y="5" id="shape_binary_search" points="0,20 10,0 20,20" fill="#E0F2F1" />
+		</svg>
+
+		<svg id="wrapper_binary_search_2" class="shape">
+			<rect y="180" id="shape_binary_search_2" width="30" height="40" fill="#B2DFDB"></rect>
+			<text id="text_2" x="5" y="200">2</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_18" class="shape">
+			<rect y="20" id="shape_binary_search_18" width="30" height="360" fill="#B2DFDB"></rect>
+			<text id="text_18" x="5" y="200">18</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_3" class="shape">
+			<rect y="170" id="shape_binary_search_3" width="30" height="60" fill="#B2DFDB"></rect>
+			<text id="text_3" x="5" y="200">3</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_10" class="shape">
+			<rect y="100" id="shape_binary_search_10" width="30" height="200" fill="#B2DFDB"></rect>
+			<text id="text_10" x="5" y="200">10</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_17" class="shape">
+			<rect y="30" id="shape_binary_search_17" width="30" height="340" fill="#B2DFDB"></rect>
+			<text id="text_17" x="5" y="200">17</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_14" class="shape">
+			<rect y="60" id="shape_binary_search_14" width="30" height="280" fill="#B2DFDB"></rect>
+			<text id="text_14" x="5" y="200">14</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_12" class="shape">
+			<rect y="80" id="shape_binary_search_12" width="30" height="240" fill="#B2DFDB"></rect>
+			<text id="text_12" x="5" y="200">12</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_11" class="shape">
+			<rect y="90" id="shape_binary_search_11" width="30" height="220" fill="#B2DFDB"></rect>
+			<text id="text_11" x="5" y="200">11</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_8" class="shape">
+			<rect y="120" id="shape_binary_search_8" width="30" height="160" fill="#B2DFDB"></rect>
+			<text id="text_8" x="5" y="200">8</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_4" class="shape">
+			<rect y="160" id="shape_binary_search_4" width="30" height="80" fill="#B2DFDB"></rect>
+			<text id="text_4" x="5" y="200">4</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_13" class="shape">
+			<rect y="70" id="shape_binary_search_13" width="30" height="260" fill="#B2DFDB"></rect>
+			<text id="text_13" x="5" y="200">13</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_16" class="shape">
+			<rect y="40" id="shape_binary_search_16" width="30" height="320" fill="#B2DFDB"></rect>
+			<text id="text_16" x="5" y="200">16</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_19" class="shape">
+			<rect y="10" id="shape_binary_search_19" width="30" height="380" fill="#B2DFDB"></rect>
+			<text id="text_19" x="5" y="200">19</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_15" class="shape">
+			<rect y="50" id="shape_binary_search_15" width="30" height="300" fill="#B2DFDB"></rect>
+			<text id="text_15" x="5" y="200">15</text>
+		</svg>
+	
+		<svg id="wrapper_binary_search_5" class="shape">
+			<rect y="150" id="shape_binary_search_5" width="30" height="100" fill="#B2DFDB"></rect>
+			<text id="text_5" x="5" y="200">5</text>
+		</svg>
+	
+	
 	</div>
-	<div class= "text-center controls-space col-sm-7 col-md-7">
-		<div class="row visual-description">
-			<h4>People you may know</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-		</div>
-		<div class="row">
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_binary_search_push" class="btn waves-effect waves-teal"><b>push()</b> <i>(do action)</i></button></li>
-				<li><button id="btn_binary_search_pop" class="btn waves-effect waves-teal"><b>pop()</b> <i>(undo action)</i></button></li>
-				<li><button id="btn_binary_search_isempty" class="btn waves-effect waves-teal"><b>isEmpty()</b> <i>(undos depleted?)</i></button></li>
-			</ul>
-			<ul class="list-unstyled col-md-6 col-sm-6">
-				<li><button id="btn_binary_search_new" class="btn waves-effect waves-teal"><b>newStack()</b> <i>(clear cache)</i> </button></li>
-				<li><button id="btn_binary_search_size" class="btn waves-effect waves-teal"><b>size()</b> <i>(undos remaining?)</i></button></li>
-				<li><button id="btn_binary_search_peek" class="btn waves-effect waves-teal"><b>peek()</b> <i>(next undo action?)</i></button></li>
-			</ul>
-		</div>
+	<div class="col-md-2 col-sm-2">
+		<input type="number" placeholder="Search for?" name="number_search" id="number_binary_search">
+		<button id="btn_binary_search" class="btn waves-effect waves-teal">search</button>
 	</div>
 </div>
 
@@ -34,8 +100,7 @@
 				<div class="card-title">
 					<h5>A little literature...</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Binary search is a <i>divide and conquer</i> style algorthm that continually reduces the size of the list into halves and calls the search procedure on each until a base case of one or none elements is reached.</p>
 			</div>
 		</div>
 	</div>
@@ -45,8 +110,7 @@
 				<div class="card-title">
 					<h5>Main Applications</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Easily finds a target in already sorted data, which make it ideal since the initial sorting overhead is eliminated.</p>
 			</div>
 		</div>
 	</div>
@@ -59,8 +123,7 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Fast, compared to linear serach</p>
 			</div>
 		</div>
 	</div>
@@ -70,8 +133,7 @@
 				<div class="card-title">
 					<h5>Drawbacks</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Data must first be sorted before applying the algorithm.</p>
 			</div>
 		</div>
 	</div>

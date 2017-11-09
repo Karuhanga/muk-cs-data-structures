@@ -3,13 +3,12 @@
 <div id="container-visualisation-trees" class="row height-100">
 	<div class= "text-center visualisation-space col-sm-5 col-md-5">
 		Visualisation
+		<img src="{{ url_for('static', filename = 'img/trie.png') }}" alt="Trie">
 	</div>
 	<div class= "text-center controls-space col-sm-7 col-md-7">
 		<div class="row visual-description">
 			<h4>A Spell Checker/Digital Dictionary</h4>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-			<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>A common way to store words in a digital dictionary/ spell checker is to make use of trees which have nodes that represent all the letters of the alphabet. Words with similar letters until a point will follow the same path until they diverge. </p>
 		</div>
 		<div class="row">
 			<ul class="list-unstyled col-md-6 col-sm-6">
@@ -38,10 +37,8 @@
 				<div class="card-title">
 					<h5>Trees</h5>
 				</div>
-				<p>
-					A tree (more accurately, a free tree) is a connected acyclic graph. A graph that has no cycles but is not necessarily connected is called a forest: each
-					of its connected components is a tree
-				</p>
+				<p>In computer science, a tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
+					A tree data structure can be defined recursively (locally) as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root.</p>
 			</div>
 		</div>
 	</div>
@@ -51,8 +48,14 @@
 				<div class="card-title">
 					<h5>Main Applications</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<h6>These include;</h6>
+				<ul>
+					<li>Representing hierarchical data</li>
+					<li>Storing data in a way that makes it efficiently searchable (see binary search tree and tree traversal)</li>
+					<li>Representing sorted lists of data</li>
+					<li>As a workflow for compositing digital images for visual effects</li>
+					<li>Routing algorithms</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -65,8 +68,7 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>Trees are an inuitive way to store logically, heirachichally linked data.</p>
 			</div>
 		</div>
 	</div>
@@ -76,8 +78,7 @@
 				<div class="card-title">
 					<h5>Drawbacks</h5>
 				</div>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-				<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+				<p>If poorly implemented, tree traversal can be a very expensive process.</p>
 			</div>
 		</div>
 	</div>

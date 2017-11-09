@@ -57,9 +57,11 @@ function showSummary() {
 	$('#container-visualisation-recursion').hide();
 	$('#container-data-recursion').hide();
 	$('.container-summary-recursion').show();
+	pause();
 }
 
 function showVisualisation() {
+	pause();
 	$('#container-data-recursion').hide();
 	$('.container-summary-recursion').hide();
 	$('#container-visualisation-recursion').show();

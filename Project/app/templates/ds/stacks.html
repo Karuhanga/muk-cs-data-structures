@@ -57,10 +57,14 @@
 				<div class="card-title">
 					<h5>Stacks</h5>
 				</div>
-
 				<p>
+<<<<<<< HEAD
 				A stack is a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle.
 				A user may insert objects into a stack at any time, but may only access or remove the most recently inserted object that remains (at the so-called “top” of the stack).
+=======
+					A stack is a collection of objects that are inserted and removed according to the last-in, first-out (LIFO) principle.
+					A user may insert objects into a stack at any time, but may only access or remove the most recently inserted object that remains (at the so-called “top” of the stack).
+>>>>>>> 1e09a000290c6fae283167e283abe969f4f202a3
 				</p>
 			</div>
 		</div>
@@ -72,12 +76,10 @@
 					<h5>Main Applications</h5>
 				</div>
 				<p>
-				A good use for a stack would be the undo/redo feature.
-			   An easy and straightforward application of this type of data structure would be a reverse polish notation calculator.
-			   The stack is also used to store a function's local arguments.
-					Besides the above applications, there are a bunch of other uses of stacks not limited to;
-					Parsing, Recursive functions, Calling functions, Expression evaluation, Expression conversion, among others.
-
+					The stack can be used to store a function's exception handlers, so when an exception occurs, the stack can automatically "unwind" back through the return addresses to locate a suitable handler.
+					Everytime the user enters something, if you need to reverse, just pop it off the top of the undo stack and push it onto the redo stack.
+					Besides the above feature, there are a bunch of other uses of stacks not limited to;
+					The stack is also used to store a function's local arguments since these only need to remain in memory when the function is actually invoked (they will fall from scope as soon as the function returns). Callers can also pass arguments to functions by pushing them onto the stack immediately after the return address.
 				</p>
 			</div>
 		</div>
@@ -91,11 +93,7 @@
 				<div class="card-title">
 					<h5>Advantages</h5>
 				</div>
-				<p>
-				It helps you save data, its bases on LIFO, i.e last in first out. Its one sided. uses push and pop functions generally.
-				Stacks also provide an automatic means of backtracking, that is, every thread in a process has its own built-in stack, making it possible for functions to know from where they were called and thus return control to their callers.
-				Thus functions can call functions (including recursive calls to themselves) without losing track of where each individual call came from. The stack essentially provides a "breadcrumb trail".
-				</p>
+				<p>Stacks provide an automatic means of backtracking because variables are popped from the stack in the reverse order they were pushed onto the stack. Thus you can always find your way back to a given state. Every thread in a process has its own built-in stack, making it possible for functions to know from where they were called and thus return control to their callers. The callers simply push the return address onto the stack before passing control to the callee. The return address stays on the stack until the callee is ready to return control to the caller. Thus functions can call functions (including recursive calls to themselves) without losing track of where each individual call came from. The stack essentially provides a "breadcrumb trail".</p>
 			</div>
 		</div>
 	</div>
@@ -106,10 +104,9 @@
 					<h5>Drawbacks</h5>
 				</div>
 				<p>
-					Stacks can be used internally in every program,but the major disadvantages of stacks are that they can't be resized, can't be searched, and take more memory meaning memory is created statically.
-
+					We can use stack internally in every program, but the disadvantage of stacks is we can't resize, no searching, takes more memory since we create memory statically.
 				</p>
-
+				</ul>
 			</div>
 		</div>
 	</div>
